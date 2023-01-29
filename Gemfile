@@ -5,7 +5,7 @@ gem 'dotenv-rails', :require => "dotenv/rails-now"
 gem "rails", "~> 7.0"
 gem "pg"
 gem "simple_form"
-gem "sanitize"
+gem "sanitize", ">= 6.0.1"
 gem 'ruby-vips'
 gem 'diff-lcs', :require => "diff/lcs/array"
 gem 'bcrypt', :require => "bcrypt"
