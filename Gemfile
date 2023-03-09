@@ -2,7 +2,7 @@ source 'https://rubygems.org/'
 
 gem 'dotenv-rails', :require => "dotenv/rails-now"
 
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.0", ">= 7.0.4"
 gem "pg"
 gem "simple_form"
 gem "sanitize"
