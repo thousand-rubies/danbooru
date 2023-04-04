@@ -2,10 +2,10 @@ source 'https://rubygems.org/'
 
 gem 'dotenv-rails', :require => "dotenv/rails-now"
 
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.0", ">= 7.0.4.3"
 gem "pg"
 gem "simple_form"
-gem "sanitize"
+gem "sanitize", ">= 6.0.1"
 gem 'ruby-vips'
 gem 'diff-lcs', :require => "diff/lcs/array"
 gem 'bcrypt', :require => "bcrypt"
@@ -35,7 +35,7 @@ gem 'activerecord-hierarchical_query'
 gem 'http-cookie', git: "https://github.com/danbooru/http-cookie"
 gem 'pundit'
 gem 'mail'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.10'
 gem 'view_component'
 gem 'tzinfo-data'
 gem 'hsluv'
