@@ -2,9 +2,9 @@ source 'https://rubygems.org/'
 
 gem 'dotenv-rails', :require => "dotenv/rails-now"
 
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.0", ">= 7.0.7.1"
 gem "pg"
-gem "simple_form"
+gem "simple_form", ">= 5.2.0"
 gem "sanitize"
 gem 'ruby-vips'
 gem 'diff-lcs', :require => "diff/lcs/array"
@@ -12,7 +12,7 @@ gem 'bcrypt', :require => "bcrypt"
 gem 'rubyzip', :require => "zip"
 gem 'stripe'
 gem 'aws-sdk-sqs', '~> 1'
-gem 'responders'
+gem 'responders', '>= 3.1.0'
 gem 'dtext_rb', git: "https://github.com/danbooru/dtext_rb.git", require: "dtext"
 gem 'memoist'
 gem 'daemons'
@@ -28,40 +28,40 @@ gem 'redis'
 gem 'builder'
 # gem 'did_you_mean' # github.com/yuki24/did_you_mean/issues/117
 gem 'puma'
-gem 'scenic'
+gem 'scenic', '>= 1.7.0'
 gem 'ipaddress_2'
 gem 'http'
-gem 'activerecord-hierarchical_query'
+gem 'activerecord-hierarchical_query', '>= 1.4.2'
 gem 'http-cookie', git: "https://github.com/danbooru/http-cookie"
-gem 'pundit'
+gem 'pundit', '>= 2.3.0'
 gem 'mail'
 gem 'nokogiri'
-gem 'view_component'
+gem 'view_component', '>= 2.75.0'
 gem 'tzinfo-data'
 gem 'hsluv'
 gem 'google-cloud-bigquery', require: "google/cloud/bigquery"
 gem 'google-cloud-storage', require: "google/cloud/storage"
 gem 'ed25519'
 gem 'bcrypt_pbkdf' # https://github.com/net-ssh/net-ssh/issues/565
-gem 'clockwork'
-gem 'puma-metrics'
+gem 'clockwork', '>= 3.0.1'
+gem 'puma-metrics', '>= 1.3.0'
 gem 'puma_worker_killer'
 gem "rack-timeout", require: "rack/timeout/base"
 gem "parallel"
 gem "ffi"
 gem "rbtrace"
-gem "good_job"
+gem "good_job", ">= 3.4.8"
 gem "crass"
 gem "public_suffix"
 gem "elastic-apm"
 gem "debug"
 gem "ffaker"
-gem "composite_primary_keys"
+gem "composite_primary_keys", ">= 14.0.5"
 gem "resolv"
 
 group :development do
   gem 'rubocop', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.17.0', require: false
   #gem 'meta_request'
   gem 'rack-mini-profiler'
   gem 'stackprof'
@@ -77,7 +77,7 @@ end
 
 group :test do
   gem "shoulda-context"
-  gem "shoulda-matchers"
+  gem "shoulda-matchers", ">= 5.3.0"
   gem "factory_bot"
   gem "mocha", require: "mocha/minitest"
   gem "simplecov", require: false
