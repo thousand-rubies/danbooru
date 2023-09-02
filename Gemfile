@@ -78,7 +78,7 @@ end
 group :test do
   gem "shoulda-context"
   gem "shoulda-matchers"
-  gem "factory_bot"
+  gem "factory_bot", ">= 6.3.0"
   gem "mocha", require: "mocha/minitest"
   gem "simplecov", require: false
   gem "minitest-ci"
