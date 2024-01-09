@@ -311,7 +311,7 @@ GEM
       timeout
     net-smtp (0.3.2)
       net-protocol
-    nio4r (2.5.8)
+    nio4r (2.7.0)
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -328,13 +328,13 @@ GEM
     parser (3.1.2.1)
       ast (~> 2.4.1)
     pg (1.3.5)
-    prometheus-client (4.0.0)
+    prometheus-client (4.2.2)
     public_suffix (5.0.0)
-    puma (5.6.5)
+    puma (6.4.2)
       nio4r (~> 2.0)
-    puma-metrics (1.2.5)
+    puma-metrics (1.3.0)
       prometheus-client (>= 0.10)
-      puma (>= 5.0)
+      puma (>= 6.0)
     puma_worker_killer (0.3.1)
       get_process_mem (~> 0.2)
       puma (>= 2.7)
@@ -568,8 +568,8 @@ DEPENDENCIES
   parallel
   pg
   public_suffix
-  puma
-  puma-metrics
+  puma (>= 5.6.8)
+  puma-metrics (>= 1.3.0)
   puma_worker_killer
   pundit
   rack-mini-profiler
