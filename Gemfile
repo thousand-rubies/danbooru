@@ -45,7 +45,7 @@ gem 'ed25519'
 gem 'bcrypt_pbkdf' # https://github.com/net-ssh/net-ssh/issues/565
 gem 'clockwork'
 gem 'puma-metrics'
-gem 'puma_worker_killer'
+gem 'puma_worker_killer', '>= 1.0.0'
 gem "rack-timeout", require: "rack/timeout/base"
 gem "parallel"
 gem "ffi"
