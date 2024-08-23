@@ -39,8 +39,8 @@ gem 'nokogiri'
 gem 'view_component'
 gem 'tzinfo-data'
 gem 'hsluv'
-gem 'google-cloud-bigquery', require: "google/cloud/bigquery"
-gem 'google-cloud-storage', require: "google/cloud/storage"
+gem 'google-cloud-bigquery', '>= 1.40.0', require: "google/cloud/bigquery"
+gem 'google-cloud-storage', '>= 1.44.0', require: "google/cloud/storage"
 gem 'ed25519'
 gem 'bcrypt_pbkdf' # https://github.com/net-ssh/net-ssh/issues/565
 gem 'clockwork'
@@ -60,8 +60,8 @@ gem "composite_primary_keys"
 gem "resolv"
 
 group :development do
-  gem 'rubocop', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop', '>= 1.37.0', require: false
+  gem 'rubocop-rails', '>= 2.17.0', require: false
   #gem 'meta_request'
   gem 'rack-mini-profiler'
   gem 'stackprof'
@@ -71,7 +71,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'benchmark-ips', require: "benchmark/ips"
   gem 'listen'
-  gem 'solargraph'
+  gem 'solargraph', '>= 0.48.0'
   gem 'derailed_benchmarks'
 end
 
@@ -85,7 +85,7 @@ group :test do
   gem "minitest-reporters", require: "minitest/reporters"
   gem "mock_redis"
   gem "capybara"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 4.6.0"
   gem "codecov", require: false
   gem 'stripe-ruby-mock', require: "stripe_mock"
 end
