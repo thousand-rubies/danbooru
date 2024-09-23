@@ -39,8 +39,8 @@ gem 'nokogiri'
 gem 'view_component'
 gem 'tzinfo-data'
 gem 'hsluv'
-gem 'google-cloud-bigquery', require: "google/cloud/bigquery"
-gem 'google-cloud-storage', require: "google/cloud/storage"
+gem 'google-cloud-bigquery', '>= 1.46.0', require: "google/cloud/bigquery"
+gem 'google-cloud-storage', '>= 1.48.0', require: "google/cloud/storage"
 gem 'ed25519'
 gem 'bcrypt_pbkdf' # https://github.com/net-ssh/net-ssh/issues/565
 gem 'clockwork'
@@ -50,7 +50,7 @@ gem "rack-timeout", require: "rack/timeout/base"
 gem "parallel"
 gem "ffi"
 gem "rbtrace"
-gem "good_job"
+gem "good_job", ">= 3.17.0"
 gem "crass"
 gem "public_suffix"
 gem "elastic-apm"
