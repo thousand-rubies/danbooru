@@ -60,7 +60,7 @@ gem "composite_primary_keys"
 gem "resolv"
 
 group :development do
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
   gem 'rubocop-rails', require: false
   #gem 'meta_request'
   gem 'rack-mini-profiler'
