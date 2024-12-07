@@ -288,7 +288,7 @@ GEM
     method_source (1.0.0)
     mini_histogram (0.3.1)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.8)
     minitest (5.16.3)
     minitest-ci (3.4.0)
       minitest (>= 5.0.6)
@@ -312,8 +312,8 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.9)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.15.7)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
@@ -341,7 +341,7 @@ GEM
     pundit (2.2.0)
       activesupport (>= 3.0.0)
     raabro (1.4.0)
-    racc (1.6.0)
+    racc (1.8.1)
     rack (2.2.4)
     rack-mini-profiler (3.0.0)
       rack (>= 1.2.0)
@@ -563,7 +563,7 @@ DEPENDENCIES
   minitest-reporters
   mocha
   mock_redis
-  nokogiri
+  nokogiri (>= 1.15.7)
   oauth2
   parallel
   pg
