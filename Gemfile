@@ -35,7 +35,7 @@ gem 'activerecord-hierarchical_query'
 gem 'http-cookie', git: "https://github.com/danbooru/http-cookie"
 gem 'pundit'
 gem 'mail'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.3'
 gem 'view_component'
 gem 'tzinfo-data'
 gem 'hsluv'
@@ -61,7 +61,7 @@ gem "resolv"
 
 group :development do
   gem 'rubocop', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.30.0', require: false
   #gem 'meta_request'
   gem 'rack-mini-profiler'
   gem 'stackprof'
