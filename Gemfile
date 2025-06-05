@@ -1,91 +1,91 @@
 source 'https://rubygems.org/'
 
-gem 'dotenv-rails', :require => "dotenv/rails-now"
+gem 'dotenv-rails', '>= 3.0.0', :require => "dotenv/rails-now"
 
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.1", ">= 7.1.0"
 gem "pg"
-gem "simple_form"
-gem "sanitize"
+gem "simple_form", ">= 5.2.0"
+gem "sanitize", ">= 6.0.1"
 gem 'ruby-vips'
 gem 'diff-lcs', :require => "diff/lcs/array"
 gem 'bcrypt', :require => "bcrypt"
 gem 'rubyzip', :require => "zip"
 gem 'stripe'
 gem 'aws-sdk-sqs', '~> 1'
-gem 'responders'
+gem 'responders', '>= 3.1.0'
 gem 'dtext_rb', git: "https://github.com/danbooru/dtext_rb.git", require: "dtext"
 gem 'memoist'
 gem 'daemons'
-gem 'oauth2'
+gem 'oauth2', '>= 2.0.10'
 gem 'bootsnap'
 gem 'addressable'
 gem 'rakismet'
 gem 'recaptcha', require: "recaptcha/rails"
-gem 'activemodel-serializers-xml'
+gem 'activemodel-serializers-xml', '>= 1.0.3'
 gem 'webpacker', '= 6.0.0.rc.6'
 gem 'rake'
 gem 'redis'
 gem 'builder'
 # gem 'did_you_mean' # github.com/yuki24/did_you_mean/issues/117
 gem 'puma'
-gem 'scenic'
+gem 'scenic', '>= 1.7.0'
 gem 'ipaddress_2'
 gem 'http'
-gem 'activerecord-hierarchical_query'
+gem 'activerecord-hierarchical_query', '>= 1.4.2'
 gem 'http-cookie', git: "https://github.com/danbooru/http-cookie"
-gem 'pundit'
+gem 'pundit', '>= 2.3.0'
 gem 'mail'
 gem 'nokogiri'
-gem 'view_component'
+gem 'view_component', '>= 2.75.0'
 gem 'tzinfo-data'
 gem 'hsluv'
-gem 'google-cloud-bigquery', require: "google/cloud/bigquery"
-gem 'google-cloud-storage', require: "google/cloud/storage"
+gem 'google-cloud-bigquery', '>= 1.40.0', require: "google/cloud/bigquery"
+gem 'google-cloud-storage', '>= 1.44.0', require: "google/cloud/storage"
 gem 'ed25519'
 gem 'bcrypt_pbkdf' # https://github.com/net-ssh/net-ssh/issues/565
-gem 'clockwork'
-gem 'puma-metrics'
-gem 'puma_worker_killer'
+gem 'clockwork', '>= 3.0.1'
+gem 'puma-metrics', '>= 1.3.0'
+gem 'puma_worker_killer', '>= 1.0.0'
 gem "rack-timeout", require: "rack/timeout/base"
 gem "parallel"
 gem "ffi"
 gem "rbtrace"
-gem "good_job"
+gem "good_job", ">= 3.4.8"
 gem "crass"
 gem "public_suffix"
 gem "elastic-apm"
 gem "debug"
 gem "ffaker"
-gem "composite_primary_keys"
+gem "composite_primary_keys", ">= 14.0.5"
 gem "resolv"
 
 group :development do
   gem 'rubocop', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.17.0', require: false
   #gem 'meta_request'
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 3.1.0'
   gem 'stackprof'
   gem 'flamegraph'
   gem 'memory_profiler'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.10.0'
   gem 'binding_of_caller'
   gem 'benchmark-ips', require: "benchmark/ips"
   gem 'listen'
-  gem 'solargraph'
-  gem 'derailed_benchmarks'
+  gem 'solargraph', '>= 0.48.0'
+  gem 'derailed_benchmarks', '>= 2.2.0'
 end
 
 group :test do
   gem "shoulda-context"
-  gem "shoulda-matchers"
-  gem "factory_bot"
+  gem "shoulda-matchers", ">= 5.3.0"
+  gem "factory_bot", ">= 6.3.0"
   gem "mocha", require: "mocha/minitest"
   gem "simplecov", require: false
   gem "minitest-ci"
   gem "minitest-reporters", require: "minitest/reporters"
   gem "mock_redis"
-  gem "capybara"
-  gem "selenium-webdriver"
+  gem "capybara", ">= 3.38.0"
+  gem "selenium-webdriver", ">= 4.6.0"
   gem "codecov", require: false
   gem 'stripe-ruby-mock', require: "stripe_mock"
 end
