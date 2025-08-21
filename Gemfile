@@ -2,7 +2,7 @@ source 'https://rubygems.org/'
 
 gem 'dotenv-rails', :require => "dotenv/rails-now"
 
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.1", ">= 7.1.5.2"
 gem "pg"
 gem "simple_form"
 gem "sanitize"
@@ -28,10 +28,10 @@ gem 'redis'
 gem 'builder'
 # gem 'did_you_mean' # github.com/yuki24/did_you_mean/issues/117
 gem 'puma'
-gem 'scenic'
+gem 'scenic', '>= 1.7.0'
 gem 'ipaddress_2'
 gem 'http'
-gem 'activerecord-hierarchical_query'
+gem 'activerecord-hierarchical_query', '>= 1.4.5'
 gem 'http-cookie', git: "https://github.com/danbooru/http-cookie"
 gem 'pundit'
 gem 'mail'
@@ -50,7 +50,7 @@ gem "rack-timeout", require: "rack/timeout/base"
 gem "parallel"
 gem "ffi"
 gem "rbtrace"
-gem "good_job"
+gem "good_job", ">= 3.4.8"
 gem "crass"
 gem "public_suffix"
 gem "elastic-apm"
